@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GeoVision</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="scroll-wrapper">
+        <section class="blank landing">
+            <div class="landing-bg">
+                <img src="./assets/landing-bg.svg" alt="landing" />
+            </div>
+            <div class="blog">
+
+                <div class="title">Lorem ipsum dolor sit amet</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="scroll">
+                    <span class="fa">&#8595;</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="horizontal upper">
+            <div class="pin-wrap">
+                <div class="animation-wrap">
+
+                    <div class="bg_mountain"><img src="./assets/bg_mountain.svg" alt="bg_mountain" /></div>
+                    <div class="cloud"><img src="./assets/cloud.svg" alt="cloud" /></div>
+                    <div class="ground"><img src="./assets/long_ground.svg" alt="ground" /></div>
+                    <!-- <div class="mountain"><img src="./assets/mountain.svg" alt="mountain" /></div> -->
+                    <div class="triggers">
+                        <div id="section_1" class="trigger">Section 1</div>
+                        <div id="section_2" class="trigger">Section 2</div>
+                        <div id="section_3" class="trigger">Section 3</div>
+                        <div id="section_4" class="trigger">Section 4</div>
+                        <div id="section_5" class="trigger">Section 5</div>
+                        <div id="section_6" class="trigger">Section 6</div>
+                        <div id="section_7" class="trigger">Section 7</div>
+                        <div id="section_8" class="trigger">Section 8</div>
+                        <div id="section_9" class="trigger">Section 9</div>
+                        <div id="section_10" class="trigger">
+                            <div id="man">
+                                <img src="./assets/man.svg" alt="man" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <img src="./assets/truck.png" alt="truck" />
+                </div>
+                <div class="truckwheel truckwheel-left">
+                    <img src="./assets/truckwheel.png" alt="truckwheel" />
+                </div>
+                <div class="truckwheel truckwheel-right">
+                    <img src="./assets/truckwheel.png" alt="truckwheel" />
+                </div>
+            </div>
+        </section>
+
+        <section class="blank blank_2">
+            <div class="bg_image">
+                <img src="./assets/blank_bg.svg" alt="bg" />
+            </div>
+            <div class="title">Lorem ipsum dolor sit amet</div>
+        </section>
+
+        <section class="vertical">
+            <div class="drilling">
+                <div class="underground">
+                    <img src="./assets/vertical.svg" alt="underground" />
+                </div>
+                <div class="drill_s">
+                    <img src="./assets/drill/drill_1.png" alt="drill" />
+                </div>
+            </div>
+        </section>
+
+        <section class="vertical">
+            <div class="drilling">
+                <div class="underground">
+                    <img src="./assets/vertical.svg" alt="underground" />
+                </div>
+                <div class="drill_l">
+                    <img src="./assets/drill_01.svg" alt="drill" />
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="horizontal under">
+            <div class="pin-wrap">
+                <div class="animation-wrap">
+                    <div id="section_1" class="item">Section 1</div>
+                    <div id="section_2" class="item">Section 2</div>
+                    <div id="section_3" class="item">Section 3</div>
+                    <div id="section_4" class="item">Section 4</div>
+                    <div id="section_5" class="item">Section 5</div>
+                    <div id="section_6" class="item">Section 6</div>
+                    <div id="section_7" class="item">Section 7</div>
+                    <div id="section_8" class="item">Section 8</div>
+                    <div id="section_9" class="item">Section 9</div>
+                    <div id="section_10" class="item">Section 10</div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="motion">
+            <div id="scrollDist"></div>
+            <div id="container">
+                <svg id="map" width="100vw" height="100vh">
+                    <path id="path"
+                        d="M1 0V3640.91C9.5695 3908.56 70.5779 4761.39 262.259 4882.99C501.86 5034.98 857.697 5160.98 1146.15 5009.49C1434.59 4857.99 1769 4740.49 2012.5 4882.99C2512.74 5175.74 2706.54 5314.85 2984.64 5361.84C3207.13 5399.44 3364.25 5401.84 3415 5398.34H3625"
+                        fill="none" stroke="black" stroke-width="50" />
+
+                    <g id="point">
+                        <path
+                            d="M89.7472 50L0 50L1.1807e-07 3.8147e-06L89.7472 -1.08279e-07C117.087 -1.30333e-06 116.413 50 89.7472 50Z"
+                            fill="black" />
+                        <path
+                            d="M47.492 42.9941L46 41.4615L46 9.27521L47.492 7.74254L62.6256 7.74253L64.3308 9.27521L64.3308 41.4615L62.6256 42.9941L47.492 42.9941Z"
+                            fill="#333333" />
+                        <path
+                            d="M67.332 43.7363L67.332 7.00044L93.131 7.00044L99.385 8.43171L101.994 10.9985L101.994 38.9893L98.6396 42.3051L92.9353 43.7363L67.332 43.7363Z"
+                            fill="#717173" />
+                        <path d="M67.332 11.825L67.332 38.9131L101.994 38.9131L101.994 11.825L67.332 11.825Z"
+                            fill="#535255" />
+                        <path d="M67.332 16.6486L67.332 33.7178L101.994 33.7178L101.994 16.6486L67.332 16.6486Z"
+                            fill="#3A3A3C" />
+                        <path d="M67.3379 12.2133L67.3379 18.8926L102 18.8926L102 12.2133L67.3379 12.2133Z"
+                            fill="#9E9E9E" />
+                        <path d="M64.332 9.22672L64.332 41.5098L67.6649 41.5098L67.6649 9.22672L64.332 9.22672Z"
+                            fill="#535255" />
+                        <path
+                            d="M49.515 31.0224L49 30.5074L49 28.4824L49.35 28.1324L48.95 28.1324L48.95 27.9074L50.2 27.9074L50.2 28.1324L49.66 28.1324L49.2 28.5924L49.2 29.8724L52.8 29.8724L52.8 29.2474L52.425 28.8724L51.15 28.8724L51.15 29.2724L50.95 29.2724L50.95 27.3974L51.15 27.3974L51.15 27.7474L53 27.7474L53 28.3824L52.62 28.7574L53 29.1374L53 30.5074L52.485 31.0224L49.515 31.0224ZM53 26.5326L52.535 26.9976L50.465 26.9976L50 26.5326L50 24.6126L50.465 24.1476L51.285 24.1476L51.75 24.6126L51.75 25.8476L52.8 25.8476L52.8 24.6976L52.38 24.2776L52.535 24.1226L53 24.5876L53 26.5326ZM50.2 25.8476L51.55 25.8476L51.55 25.2976L50.2 25.2976L50.2 25.8476ZM50.515 20.8268L52.485 20.8268L53 21.3418L53 23.1818L52.485 23.6968L50.515 23.6968L50 23.1818L50 21.3418L50.515 20.8268ZM50.2 22.4968L52.8 22.4968L52.8 22.0268L50.2 22.0268L50.2 22.4968ZM55.2 31.3862L55.2 31.7212L59 32.8362L59 34.0312L55.2 35.1462L55.2 35.4812L55 35.4812L55 33.4112L55.2 33.4112L55.2 33.9512L58.59 32.9562L55.2 31.9612L55.2 32.5012L55 32.5012L55 31.3862L55.2 31.3862ZM55.6 30.3269L54.835 31.0869L54.075 30.3219L54.84 29.5619L55.6 30.3269ZM58.8 29.2869L59 29.2869L59 30.3719L58.535 30.8369L56.2 30.8369L56.2 31.2369L56 31.2369L56 30.1519L56.465 29.6869L58.8 29.6869L58.8 29.2869ZM59.05 28.6635L59.05 28.8885L57.975 28.8885L57.975 28.6635L58.35 28.6635L58.8 28.2135L58.8 27.1585L57.02 28.8385L56.415 28.8385L56 28.4235L56 26.9485L56.34 26.6085L55.95 26.6085L55.95 26.3835L57.025 26.3835L57.025 26.6085L56.65 26.6085L56.2 27.0585L56.2 28.0135L57.98 26.3335L58.585 26.3335L59 26.7485L59 28.3235L58.66 28.6635L59.05 28.6635ZM55.6 24.9754L54.835 25.7354L54.075 24.9704L54.84 24.2104L55.6 24.9754ZM58.8 23.9354L59 23.9354L59 25.0204L58.535 25.4854L56.2 25.4854L56.2 25.8854L56 25.8854L56 24.8004L56.465 24.3354L58.8 24.3354L58.8 23.9354ZM56.515 20.7169L58.485 20.7169L59 21.2319L59 23.0719L58.485 23.5869L56.515 23.5869L56 23.0719L56 21.2319L56.515 20.7169ZM56.2 22.3869L58.8 22.3869L58.8 21.9169L56.2 21.9169L56.2 22.3869ZM58.8 16.5678L59 16.5678L59 17.7028L58.585 18.1178L56.2 18.1178L56.2 18.4678L56.55 18.8178L58.8 18.8178L58.8 18.5678L59 18.5678L59 20.3678L58.8 20.3678L58.8 19.9678L56.2 19.9678L56.2 20.3678L56 20.3678L56 19.2828L56.35 18.9278L56 18.5778L56 17.4328L56.465 16.9678L58.8 16.9678L58.8 16.5678Z"
+                            fill="white" />
+                    </g>
+
+                </svg>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/gsap-public/minified/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="./assets/gsap-public/minified/ScrollToPlugin.min.js"></script>
+    <script src="./assets/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
