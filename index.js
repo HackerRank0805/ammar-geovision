@@ -42,6 +42,42 @@ horizontalSections.forEach(function (sec, i) {
   );
 
 
+  gsap.timeline({
+    scrollTrigger:
+    {
+      trigger: ".landing-banner",
+      start: "0% 0%",
+      end: "100% 100%", // use a calculated value
+      scrub: true,
+      pin: "section.blank",
+      // markers: true
+    },
+  })
+
+  gsap.timeline({
+    scrollTrigger:
+    {
+      trigger: ".landing-trigger-1",
+      start: "0% 100%",
+      end: "100% 0%", // use a calculated value
+      scrub: true,
+    },
+  }).to(".yellow-bg", {
+    opacity: 1
+  })
+
+  gsap.timeline({
+    scrollTrigger:
+    {
+      trigger: ".landing-trigger-1",
+      start: "0% -100%",
+      end: "100% -200%", // use a calculated value
+      scrub: true,
+    },
+  }).to(".yellow-bg", {
+    opacity: 0
+  })
+
 
   gsap.timeline({
     scrollTrigger:
@@ -54,6 +90,8 @@ horizontalSections.forEach(function (sec, i) {
       // markers: true
     },
   })
+
+
 
   gsap.timeline({
     scrollTrigger:
@@ -127,7 +165,7 @@ horizontalSections.forEach(function (sec, i) {
     scrollTrigger:
     {
       trigger: ".transition-trigger-3",
-      start: "0% 100%",
+      start: "0% 150%",
       end: "100% 20%", // use a calculated value
       scrub: true,
       // markers: true
