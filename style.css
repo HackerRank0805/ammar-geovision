@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
 
 html,
@@ -97,7 +99,7 @@ section.horizontal .animation-wrap {
   line-height: 160%;
   letter-spacing: -0.64px;
   max-width: 80%;
-  margin: auto
+  margin: auto;
 }
 
 #section_12 {
@@ -424,7 +426,6 @@ section.horizontal .animation-wrap {
 }
 
 .blank_2 .bg_image {
-  /* height: 100%; */
   overflow: hidden;
   width: 100%;
 }
@@ -488,10 +489,56 @@ section.horizontal .animation-wrap {
   width: 100%;
 }
 
+.injector {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.injector .underground {
+  position: absolute;
+  z-index: 0;
+}
+
+.injector .underground img {
+  width: 100%;
+}
+
+.injector .injector_s {
+  position: absolute;
+  z-index: 1;
+  top: -950px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.injector .injector_s img {
+  width: 100%;
+}
+
+.injector .injector_l {
+  position: absolute;
+  z-index: 1;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.injector .injector_l img {
+  width: 100%;
+}
 /*  Motion Path  */
 
 .motion {
-  background-color: #311c00;
+  background-image: url("./assets/underground_layer.jpg");
+  background-size: contain;
 }
 
 #container {
@@ -530,13 +577,28 @@ section.horizontal .animation-wrap {
 .section-3-d {
   position: relative;
 }
-
+.section-4-d {
+  position: relative;
+}
+.section-5-d {
+  position: relative;
+}
 .transition-trigger-2 {
   position: absolute;
   bottom: 0;
 }
 
 .transition-trigger-3 {
+  position: absolute;
+  bottom: 0;
+}
+
+.transition-trigger-4 {
+  position: absolute;
+  bottom: 0;
+}
+
+.transition-trigger-5 {
   position: absolute;
   bottom: 0;
 }
@@ -560,4 +622,37 @@ section.horizontal .animation-wrap {
 .landing-trigger-1 {
   position: absolute;
   top: 100vh;
+}
+
+.lastSection {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  /* transform: translateX(-50%); */
+  width: 100%;
+  background: url(./assets/underground_layer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lastSection .lastdrill {
+  opacity: 0;
+  width: 50px;
+  height: 30px;
+}
+.lastSection .lastinjector {
+  opacity: 0;
+
+  width: 50px;
+  height: 100px;
+}
+.last-section #svg-path {
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+.last-section #svg-path-gray {
+  top: 0;
+  left: 0;
+  position: absolute;
 }

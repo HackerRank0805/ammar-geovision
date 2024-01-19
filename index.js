@@ -1,3 +1,5 @@
+/** @format */
+
 const horizontalSections = gsap.utils.toArray("section.horizontal");
 const animationWrap = document.querySelector(".animation-wrap").offsetWidth;
 
@@ -21,8 +23,6 @@ horizontalSections.forEach(function (sec, i) {
   //   }
   // });
   var endValue = () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth);
-  var endValue2 = () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth);
-  console.log(thisAnimWrap.scrollWidth - window.innerWidth - 100);
   let scrollTween = gsap.fromTo(
     thisAnimWrap,
     { x: 0 },
@@ -41,10 +41,8 @@ horizontalSections.forEach(function (sec, i) {
     }
   );
 
-
   gsap.timeline({
-    scrollTrigger:
-    {
+    scrollTrigger: {
       trigger: ".landing-banner",
       start: "0% 0%",
       end: "100% 100%", // use a calculated value
@@ -52,36 +50,36 @@ horizontalSections.forEach(function (sec, i) {
       pin: "section.blank",
       // markers: true
     },
-  })
+  });
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".landing-trigger-1",
+        start: "0% 100%",
+        end: "100% 0%", // use a calculated value
+        scrub: true,
+      },
+    })
+    .to(".yellow-bg", {
+      opacity: 1,
+    });
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".landing-trigger-1",
+        start: "0% -100%",
+        end: "100% -200%", // use a calculated value
+        scrub: true,
+      },
+    })
+    .to(".yellow-bg", {
+      opacity: 0,
+    });
 
   gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".landing-trigger-1",
-      start: "0% 100%",
-      end: "100% 0%", // use a calculated value
-      scrub: true,
-    },
-  }).to(".yellow-bg", {
-    opacity: 1
-  })
-
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".landing-trigger-1",
-      start: "0% -100%",
-      end: "100% -200%", // use a calculated value
-      scrub: true,
-    },
-  }).to(".yellow-bg", {
-    opacity: 0
-  })
-
-
-  gsap.timeline({
-    scrollTrigger:
-    {
+    scrollTrigger: {
       trigger: ".anim-height",
       start: "0% 0%",
       end: "100% 100%", // use a calculated value
@@ -89,111 +87,216 @@ horizontalSections.forEach(function (sec, i) {
       pin: thisPinWrap,
       // markers: true
     },
-  })
+  });
 
-
-
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".transition-trigger-1",
-      start: "0% 80%",
-      end: "100% 20%", // use a calculated value
-      scrub: true,
-      // markers: true
-    },
-  })
-    .to(".brown-overlay", {
-      opacity: 1
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-1",
+        start: "0% 80%",
+        end: "100% 20%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
     })
-
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".transition-trigger-1",
-      start: "0% -30%",
-      end: "100% -80%", // use a calculated value
-      scrub: true,
-      // markers: true
-    },
-  })
     .to(".brown-overlay", {
-      opacity: 0
+      opacity: 1,
+    });
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-1",
+        start: "0% -30%",
+        end: "100% -80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
     })
-
-
+    .to(".brown-overlay", {
+      opacity: 0,
+    });
 
   // Section 2
 
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".transition-trigger-2",
-      start: "0% 200%",
-      end: "100% 80%", // use a calculated value
-      scrub: true,
-      // markers: true
-    },
-  })
-    .to(".brown-overlay", {
-      opacity: 1
-    }, 0)
-    .to(".drill_s", {
-      scale: 10,
-      transformOrigin: "center bottom"
-    }, 0)
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-2",
+        start: "0% 200%",
+        end: "100% 80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 1,
+      },
+      0
+    )
+    .to(
+      ".drill_s",
+      {
+        scale: 10,
+        transformOrigin: "center bottom",
+      },
+      0
+    );
 
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".transition-trigger-2",
-      start: "0% 20%",
-      end: "100% -80%", // use a calculated value
-      scrub: true,
-      // markers: true
-    },
-  })
-    .to(".brown-overlay", {
-      opacity: 0
-    }, 0)
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-2",
+        start: "0% 20%",
+        end: "100% -80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 0,
+      },
+      0
+    );
 
+  // section3
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-3",
+        start: "0% 200%",
+        end: "100% 80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 1,
+      },
+      0
+    )
+    .to(
+      ".injector_s",
+      {
+        scale: 10,
+        transformOrigin: "center bottom",
+      },
+      0
+    );
 
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-3",
+        start: "0% 20%",
+        end: "100% -80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 0,
+      },
+      0
+    );
+  // Section 4
 
-  // Section 3
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-4",
+        start: "0% 150%",
+        end: "100% 20%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 1,
+      },
+      0
+    )
+    .to(
+      ".drilling .drill_l",
+      {
+        scale: 0.1,
+        transformOrigin: "center bottom",
+      },
+      0
+    );
 
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".transition-trigger-3",
-      start: "0% 150%",
-      end: "100% 20%", // use a calculated value
-      scrub: true,
-      // markers: true
-    },
-  })
-    .to(".brown-overlay", {
-      opacity: 1
-    }, 0)
-    .to(".drilling .drill_l", {
-      scale: 0.1,
-      transformOrigin: "center bottom"
-    }, 0)
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-4",
+        start: "0% 20%",
+        end: "100% -80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 0,
+      },
+      0
+    );
 
-  gsap.timeline({
-    scrollTrigger:
-    {
-      trigger: ".transition-trigger-3",
-      start: "0% 20%",
-      end: "100% -80%", // use a calculated value
-      scrub: true,
-      // markers: true
-    },
-  })
-    .to(".brown-overlay", {
-      opacity: 0
-    }, 0)
+  // section5
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-5",
+        start: "0% 150%",
+        end: "100% 20%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 1,
+      },
+      0
+    )
+    .to(
+      ".injector .injector_l",
+      {
+        scale: 0.1,
+        transformOrigin: "center bottom",
+      },
+      0
+    );
 
-
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".transition-trigger-5",
+        start: "0% 20%",
+        end: "100% -80%", // use a calculated value
+        scrub: true,
+        // markers: true
+      },
+    })
+    .to(
+      ".brown-overlay",
+      {
+        opacity: 0,
+      },
+      0
+    );
   // let scrollTween2 = gsap.fromTo(
   //   thisAnimWrap,
   //   { x: 0 },
@@ -409,6 +512,11 @@ let image_s = drill_s.querySelector("img");
 let drill_l = document.querySelector(".drill_l");
 let image_l = drill_l.querySelector("img");
 
+let injector_s = document.querySelector(".injector_s");
+let iimage_s = injector_s.querySelector("img");
+
+let injector_l = document.querySelector(".injector_l");
+let iimage_l = injector_l.querySelector("img");
 // First Animation
 
 // gsap.fromTo(
@@ -452,7 +560,46 @@ gsap.to(drill_s, {
     },
   },
 });
+gsap.to(injector_s, {
+  y: 700,
+  immediateRender: false,
+  scrollTrigger: {
+    trigger: injector_s,
+    start: "bottom 0%",
+    end: "+=10000",
+    scrub: true,
+    pin: true,
+    // markers: true,
+    onUpdate: (self) => {
+      let progress = self.progress.toFixed(2);
+      let imageIndex = Math.floor(progress * 50) % 3;
+      let imageUrl = `./assets/injector/injector_${imageIndex + 1}.svg`;
+      iimage_s.setAttribute("src", imageUrl);
+    },
+  },
+});
+gsap.fromTo(
+  injector_l,
+  { y: 0 },
+  {
+    y: 900,
+    immediateRender: false,
+    scrollTrigger: {
+      trigger: injector_l,
+      start: "bottom 0%",
+      end: "+=10000",
+      scrub: true,
+      pin: true,
 
+      // onUpdate: (self) => {
+      //   let progress = self.progress.toFixed(2);
+      //   let imageIndex = Math.floor(progress * 60) % 6;
+      //   let imageUrl = `./assets/injector/injector_0${imageIndex + 1}.svg`;
+      //   iimage_l.setAttribute("src", imageUrl);
+      // },
+    },
+  }
+);
 gsap.fromTo(
   drill_l,
   { y: 0 },
@@ -476,117 +623,251 @@ gsap.fromTo(
   }
 );
 
-// Motion Path
+// gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".lastSection",
+//     pin: ".lastdrill",
+//     start: "top top",
+//     end: "bottom bottom",
+//     markers: true,
+//     scrub: true,
+//   },
+// });
 
-var ww = window.innerWidth,
-  wh = window.innerHeight,
-  speed = 10,
-  scrollDist = wh * speed,
-  scrollEnd = wh * (speed - 1),
-  map = document.getElementById("map"),
-  mapWidth = map.getBoundingClientRect().width,
-  mapHeight = map.getBoundingClientRect().height;
-
-gsap.set("#scrollDist", { width: "100%", height: scrollDist });
-gsap.set("#container", {
-  position: "fixed",
-  width: mapWidth,
-  height: mapHeight,
-  transformOrigin: "0 0",
-  left: "50%",
-  top: "-100px",
-  autoAlpha: 1,
-});
-gsap.set("#point", { scale: 1, opacity: 1 });
-gsap.set("#path", { scale: 1, opacity: 1 });
+// gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".lastSection",
+//     pin: ".lastdrill",
+//     start: "bottom bottom",
+//     end: "+=500%",
+//     scrub: true,
+//     markers: true,
+//   },
+// });
 
 gsap
   .timeline({
-    defaults: { duration: 1, ease: "none" },
     scrollTrigger: {
-      trigger: "#scrollDist",
-      start: "top center",
-      end: "+=" + scrollEnd,
-      scrub: 0.6,
-      onUpdate: ({ progress }) => console.log(progress),
+      trigger: ".lastSection",
+      pin: ".lastSection",
+      start: "top top",
+      end: "+=500%",
+      scrub: true,
+    },
+    default: {
+      ease: "none",
     },
   })
   .to(
-    "#point",
+    ".lastdrill",
     {
-      opacity: 1,
       motionPath: {
-        path: "#path",
-        align: "#path",
-        alignOrigin: [0.7, 0.5],
+        path: "#path2",
         autoRotate: true,
+        align: "#path2",
+        alignOrigin: [0.5, 0.5],
       },
     },
-    0
+    "start"
   )
+  .from("#path2", { drawSVG: "0 0" }, "start")
+  .from("#path2drill", { drawSVG: "0 0" }, "start")
   .to(
-    "#path",
+    ".lastdrill",
+    {
+      motionPath: {
+        path: "#path2",
+        autoRotate: 180,
+        align: "#path2",
+        start: 1,
+        end: 0,
+        alignOrigin: [0.5, 0.5],
+      },
+    },
+    "start2"
+  )
+  .to("#path2drill", { drawSVG: "0% 0%" }, "start2")
+
+  .to(".lastdrill", {
+    opacity: 0,
+  })
+  .to(
+    ".lastinjector",
     {
       opacity: 1,
     },
-    0
+    "-=30%"
   )
   .to(
-    "#container",
+    ".lastinjector",
     {
-      opacity: 1,
-      left: "50%",
-      top: "80%",
+      motionPath: {
+        path: "#path2",
+        autoRotate: 270,
+        align: "#path2",
+        end: 0.975,
+        alignOrigin: [0.5, 0.5],
+      },
     },
-    0
+    "start3"
   )
+  .from("#path3injector", { drawSVG: "0 0" }, "start3")
 
   .to(
-    "#container",
+    ".lastinjector",
     {
-      left: "90%",
-      top: "80%",
+      motionPath: {
+        path: "#path2",
+        autoRotate: 90,
+        align: "#path2",
+        start: 0.975,
+        end: 0,
+        alignOrigin: [0.5, 0.5],
+      },
     },
-    1
+    "inject"
   )
+  .from("#path3", { drawSVG: "100% 100%" }, "inject")
+  .to("#path3injector", { drawSVG: "0 0" }, "inject");
 
-  .from("#path", { drawSVG: "0 0" }, 0.006)
-  .set("#point", { scale: 1 }, 1);
+// .to(".lastdrill", {
+//   y: (window.innerHeight * 20) / 100,
+// })
+// .to(
+//   ".lastdrill",
+//   {
+//     x: (window.innerWidth * 50) / 100,
+//     rotate: "-90deg",
+//   },
+//   "-=40%"
+// )
+// .to(".lastdrill", {
+//   x: (window.innerWidth * 85) / 100,
+// });
 
-let povDelay = 1,
-  pos = { x: -mapWidth / 2, y: -mapHeight / 2 },
-  xSet = gsap.quickSetter("#container", "x", "px"),
-  ySet = gsap.quickSetter("#container", "y", "px");
-
-gsap.ticker.add(() => {
-  pos.x += (-gsap.getProperty("#point", "x") - pos.x) * povDelay;
-  pos.y += (-gsap.getProperty("#point", "y") - pos.y) * povDelay;
-  xSet(pos.x);
-  ySet(pos.y);
-});
-
-window.onresize = () => {
-  gsap.set("#container", {
-    left: window.innerWidth / 2,
-    top: window.innerHeight / 2,
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".lastSection",
+      start: "top center",
+      end: "top 20%",
+    },
+  })
+  .to(".lastdrill", {
+    opacity: 1,
   });
-};
 
-// Blog Fade in and fade out
+// Motion Path
 
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".blog",
-    start: "center center",
-    end: "+=300 center",
-    scrub: "+300",
-    // markers: true,
-    toggleActions: "play reverse play reverse",
-  },
-});
+// var ww = window.innerWidth,
+//   wh = window.innerHeight,
+//   speed = 10,
+//   scrollDist = wh * speed,
+//   scrollEnd = wh * (speed - 1),
+//   map = document.getElementById("map"),
+//   mapWidth = map.getBoundingClientRect().width,
+//   mapHeight = map.getBoundingClientRect().height;
 
-tl.to(".blog", { opacity: 1, duration: 0.5 }).to(
-  ".blog",
-  { opacity: 0, duration: 0.5 },
-  0.5
-);
+// gsap.set("#scrollDist", { width: "100%", height: scrollDist });
+// gsap.set("#container", {
+//   position: "fixed",
+//   width: mapWidth,
+//   height: mapHeight,
+//   transformOrigin: "0 0",
+//   left: "50%",
+//   top: "-100px",
+//   autoAlpha: 1,
+// });
+// gsap.set("#point", { scale: 1, opacity: 1 });
+// gsap.set("#path", { scale: 1, opacity: 1 });
+
+// gsap
+//   .timeline({
+//     defaults: { duration: 1, ease: "none" },
+//     scrollTrigger: {
+//       trigger: "#scrollDist",
+//       start: "top center",
+//       end: "+=" + scrollEnd,
+//       scrub: 0.6,
+//       onUpdate: ({ progress }) => console.log(progress),
+//     },
+//   })
+//   .to(
+//     "#point",
+//     {
+//       opacity: 1,
+//       motionPath: {
+//         path: "#path",
+//         align: "#path",
+//         alignOrigin: [0.7, 0.5],
+//         autoRotate: true,
+//       },
+//     },
+//     0
+//   )
+//   .to(
+//     "#path",
+//     {
+//       opacity: 1,
+//     },
+//     0
+//   )
+//   .to(
+//     "#container",
+//     {
+//       opacity: 1,
+//       left: "50%",
+//       top: "80%",
+//     },
+//     0
+//   )
+
+//   .to(
+//     "#container",
+//     {
+//       left: "90%",
+//       top: "80%",
+//     },
+//     1
+//   )
+
+//   .from("#path", { drawSVG: "0 0" }, 0.006)
+//   .set("#point", { scale: 1 }, 1);
+
+// let povDelay = 1,
+//   pos = { x: -mapWidth / 2, y: -mapHeight / 2 },
+//   xSet = gsap.quickSetter("#container", "x", "px"),
+//   ySet = gsap.quickSetter("#container", "y", "px");
+
+// gsap.ticker.add(() => {
+//   pos.x += (-gsap.getProperty("#point", "x") - pos.x) * povDelay;
+//   pos.y += (-gsap.getProperty("#point", "y") - pos.y) * povDelay;
+//   xSet(pos.x);
+//   ySet(pos.y);
+// });
+
+// window.onresize = () => {
+//   gsap.set("#container", {
+//     left: window.innerWidth / 2,
+//     top: window.innerHeight / 2,
+//   });
+// };
+
+// // Blog Fade in and fade out
+
+// const tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".blog",
+//     start: "center center",
+//     end: "+=300 center",
+//     scrub: "+300",
+//     // markers: true,
+//     toggleActions: "play reverse play reverse",
+//   },
+// });
+
+// tl.to(".blog", { opacity: 1, duration: 0.5 }).to(
+//   ".blog",
+//   { opacity: 0, duration: 0.5 },
+//   0.5
+// );
