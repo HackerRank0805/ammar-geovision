@@ -420,6 +420,13 @@ section.horizontal .animation-wrap {
 }
 
 /* The Truck Wheel Animation End */
+.blank_2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .blank_2 {
   width: 100vw;
@@ -606,8 +613,8 @@ section.horizontal .animation-wrap {
 .yellow-bg {
   background-color: #ffeec5;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 11;
@@ -624,35 +631,71 @@ section.horizontal .animation-wrap {
   top: 100vh;
 }
 
-.lastSection {
+.lastSection,
+.lastSection1,
+.lastSection2,
+.lastSection3,
+.lastSection4 {
   position: relative;
   display: flex;
   height: 100vh;
   /* transform: translateX(-50%); */
-  width: 100%;
-  background: url(./assets/underground_layer.jpg);
+  width: 100vw;
+  overflow-x: visible;
+  background: url(./assets/bg.png);
   background-size: cover;
-  background-repeat: no-repeat;
 }
-
+.lastSection:after,
+.lastSection1:after,
+.lastSection2:after,
+.lastSection3:after,
+.lastSection4:after {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  /* transform: translateX(-50%); */
+  width: 100vw;
+  overflow-x: visible;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lastSection {
+  z-index: 30;
+}
+.lastSection #svg-path {
+  margin-left: -100px;
+  z-index: 40;
+}
 .lastSection .lastdrill {
   opacity: 0;
   width: 50px;
+  z-index: 50;
   height: 30px;
 }
 .lastSection .lastinjector {
   opacity: 0;
-
   width: 50px;
   height: 100px;
 }
-.last-section #svg-path {
-  top: 0;
-  position: absolute;
-  left: 0;
+.lastSectionUpper {
+  display: flex;
+  width: 6600px;
 }
-.last-section #svg-path-gray {
-  top: 0;
-  left: 0;
+
+.vertical-section-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(./assets/bg.png);
+  background-repeat: repeat-y;
+  height: fit-content;
+}
+.vertical-section-1:after {
   position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }

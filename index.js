@@ -119,184 +119,185 @@ horizontalSections.forEach(function (sec, i) {
 
   // Section 2
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-2",
-        start: "0% 200%",
-        end: "100% 80%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 1,
-      },
-      0
-    )
-    .to(
-      ".drill_s",
-      {
-        scale: 10,
-        transformOrigin: "center bottom",
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-2",
+  //       start: "0% 200%",
+  //       end: "100% 80%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 1,
+  //     },
+  //     0
+  //   )
+  //   .to(
+  //     ".drill_s",
+  //     {
+  //       scale: 10,
+  //       transformOrigin: "center bottom",
+  //     },
+  //     0
+  //   );
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-2",
-        start: "0% 20%",
-        end: "100% -80%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 0,
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-2",
+  //       start: "0% 20%",
+  //       end: "100% -80%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     0
+  //   );
 
   // section3
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-3",
-        start: "0% 200%",
-        end: "100% 80%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 1,
-      },
-      0
-    )
-    .to(
-      ".injector_s",
-      {
-        scale: 10,
-        transformOrigin: "center bottom",
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-3",
+  //       start: "0% 200%",
+  //       end: "100% 80%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 1,
+  //     },
+  //     0
+  //   )
+  //   .to(
+  //     ".injector_s",
+  //     {
+  //       scale: 10,
+  //       transformOrigin: "center bottom",
+  //     },
+  //     0
+  //   );
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-3",
-        start: "0% 20%",
-        end: "100% -80%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 0,
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-3",
+  //       start: "0% 20%",
+  //       end: "100% -80%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     0
+  //   );
   // Section 4
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-4",
-        start: "0% 150%",
-        end: "100% 20%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 1,
-      },
-      0
-    )
-    .to(
-      ".drilling .drill_l",
-      {
-        scale: 0.1,
-        transformOrigin: "center bottom",
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-4",
+  //       start: "0% 150%",
+  //       end: "100% 20%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 1,
+  //     },
+  //     0
+  //   )
+  //   .to(
+  //     ".drilling .drill_l",
+  //     {
+  //       scale: 0.1,
+  //       transformOrigin: "center bottom",
+  //     },
+  //     0
+  //   );
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-4",
-        start: "0% 20%",
-        end: "100% -80%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 0,
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-4",
+  //       start: "0% 20%",
+  //       end: "100% -80%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     0
+  //   );
 
   // section5
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-5",
-        start: "0% 150%",
-        end: "100% 20%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 1,
-      },
-      0
-    )
-    .to(
-      ".injector .injector_l",
-      {
-        scale: 0.1,
-        transformOrigin: "center bottom",
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-5",
+  //       start: "0% 150%",
+  //       end: "100% 20%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 1,
+  //     },
+  //     0
+  //   )
+  //   .to(
+  //     ".injector .injector_l",
+  //     {
+  //       scale: 0.1,
+  //       transformOrigin: "center bottom",
+  //     },
+  //     0
+  //   );
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".transition-trigger-5",
-        start: "0% 20%",
-        end: "100% -80%", // use a calculated value
-        scrub: true,
-        // markers: true
-      },
-    })
-    .to(
-      ".brown-overlay",
-      {
-        opacity: 0,
-      },
-      0
-    );
+  // gsap
+  //   .timeline({
+  //     scrollTrigger: {
+  //       trigger: ".transition-trigger-5",
+  //       start: "0% 20%",
+  //       end: "100% -80%", // use a calculated value
+  //       scrub: true,
+  //       // markers: true
+  //     },
+  //   })
+  //   .to(
+  //     ".brown-overlay",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     0
+  //   );
+
   // let scrollTween2 = gsap.fromTo(
   //   thisAnimWrap,
   //   { x: 0 },
@@ -506,17 +507,17 @@ dev.interactions.button();
 
 // Drill Animation
 
-let drill_s = document.querySelector(".drill_s");
-let image_s = drill_s.querySelector("img");
+// let drill_s = document.querySelector(".drill_s");
+// let image_s = drill_s.querySelector("img");
 
-let drill_l = document.querySelector(".drill_l");
-let image_l = drill_l.querySelector("img");
+// let drill_l = document.querySelector(".drill_l");
+// let image_l = drill_l.querySelector("img");
 
-let injector_s = document.querySelector(".injector_s");
-let iimage_s = injector_s.querySelector("img");
+// let injector_s = document.querySelector(".injector_s");
+// let iimage_s = injector_s.querySelector("img");
 
-let injector_l = document.querySelector(".injector_l");
-let iimage_l = injector_l.querySelector("img");
+// let injector_l = document.querySelector(".injector_l");
+// let iimage_l = injector_l.querySelector("img");
 // First Animation
 
 // gsap.fromTo(
@@ -542,86 +543,86 @@ let iimage_l = injector_l.querySelector("img");
 //   }
 // );
 
-gsap.to(drill_s, {
-  y: 700,
-  immediateRender: false,
-  scrollTrigger: {
-    trigger: drill_s,
-    start: "bottom 0%",
-    end: "+=10000",
-    scrub: true,
-    pin: true,
-    // markers: true,
-    onUpdate: (self) => {
-      let progress = self.progress.toFixed(2);
-      let imageIndex = Math.floor(progress * 50) % 5;
-      let imageUrl = `./assets/drill/drill_${imageIndex + 1}.svg`;
-      image_s.setAttribute("src", imageUrl);
-    },
-  },
-});
-gsap.to(injector_s, {
-  y: 700,
-  immediateRender: false,
-  scrollTrigger: {
-    trigger: injector_s,
-    start: "bottom 0%",
-    end: "+=10000",
-    scrub: true,
-    pin: true,
-    // markers: true,
-    onUpdate: (self) => {
-      let progress = self.progress.toFixed(2);
-      let imageIndex = Math.floor(progress * 50) % 3;
-      let imageUrl = `./assets/injector/injector_${imageIndex + 1}.svg`;
-      iimage_s.setAttribute("src", imageUrl);
-    },
-  },
-});
-gsap.fromTo(
-  injector_l,
-  { y: 0 },
-  {
-    y: 900,
-    immediateRender: false,
-    scrollTrigger: {
-      trigger: injector_l,
-      start: "bottom 0%",
-      end: "+=10000",
-      scrub: true,
-      pin: true,
+// gsap.to(drill_s, {
+//   y: 700,
+//   immediateRender: false,
+//   scrollTrigger: {
+//     trigger: drill_s,
+//     start: "bottom 0%",
+//     end: "+=10000",
+//     scrub: true,
+//     pin: true,
+//     // markers: true,
+//     onUpdate: (self) => {
+//       let progress = self.progress.toFixed(2);
+//       let imageIndex = Math.floor(progress * 50) % 5;
+//       let imageUrl = `./assets/drill/drill_${imageIndex + 1}.svg`;
+//       image_s.setAttribute("src", imageUrl);
+//     },
+//   },
+// });
+// gsap.to(injector_s, {
+//   y: 700,
+//   immediateRender: false,
+//   scrollTrigger: {
+//     trigger: injector_s,
+//     start: "bottom 0%",
+//     end: "+=10000",
+//     scrub: true,
+//     pin: true,
+//     // markers: true,
+//     onUpdate: (self) => {
+//       let progress = self.progress.toFixed(2);
+//       let imageIndex = Math.floor(progress * 50) % 3;
+//       let imageUrl = `./assets/injector/injector_${imageIndex + 1}.svg`;
+//       iimage_s.setAttribute("src", imageUrl);
+//     },
+//   },
+// });
+// gsap.fromTo(
+//   injector_l,
+//   { y: 0 },
+//   {
+//     y: 900,
+//     immediateRender: false,
+//     scrollTrigger: {
+//       trigger: injector_l,
+//       start: "bottom 0%",
+//       end: "+=10000",
+//       scrub: true,
+//       pin: true,
 
-      // onUpdate: (self) => {
-      //   let progress = self.progress.toFixed(2);
-      //   let imageIndex = Math.floor(progress * 60) % 6;
-      //   let imageUrl = `./assets/injector/injector_0${imageIndex + 1}.svg`;
-      //   iimage_l.setAttribute("src", imageUrl);
-      // },
-    },
-  }
-);
-gsap.fromTo(
-  drill_l,
-  { y: 0 },
-  {
-    y: 900,
-    immediateRender: false,
-    scrollTrigger: {
-      trigger: drill_l,
-      start: "bottom 0%",
-      end: "+=10000",
-      scrub: true,
-      pin: true,
+//       // onUpdate: (self) => {
+//       //   let progress = self.progress.toFixed(2);
+//       //   let imageIndex = Math.floor(progress * 60) % 6;
+//       //   let imageUrl = `./assets/injector/injector_0${imageIndex + 1}.svg`;
+//       //   iimage_l.setAttribute("src", imageUrl);
+//       // },
+//     },
+//   }
+// );
+// gsap.fromTo(
+//   drill_l,
+//   { y: 0 },
+//   {
+//     y: 900,
+//     immediateRender: false,
+//     scrollTrigger: {
+//       trigger: drill_l,
+//       start: "bottom 0%",
+//       end: "+=10000",
+//       scrub: true,
+//       pin: true,
 
-      onUpdate: (self) => {
-        let progress = self.progress.toFixed(2);
-        let imageIndex = Math.floor(progress * 60) % 6;
-        let imageUrl = `./assets/drill_0${imageIndex + 1}.svg`;
-        image_l.setAttribute("src", imageUrl);
-      },
-    },
-  }
-);
+//       onUpdate: (self) => {
+//         let progress = self.progress.toFixed(2);
+//         let imageIndex = Math.floor(progress * 60) % 6;
+//         let imageUrl = `./assets/drill_0${imageIndex + 1}.svg`;
+//         image_l.setAttribute("src", imageUrl);
+//       },
+//     },
+//   }
+// );
 
 // gsap.timeline({
 //   scrollTrigger: {
@@ -648,10 +649,73 @@ gsap.fromTo(
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".lastSection",
-      pin: ".lastSection",
+      trigger: ".vertical-section-1",
       start: "top top",
-      end: "+=500%",
+      end: "bottom top",
+      scrub: true,
+    },
+    default: {
+      ease: "none",
+    },
+  })
+  .to(
+    ".lastdrill-vert",
+    {
+      motionPath: {
+        path: "#path2-vert",
+        autoRotate: true,
+        align: "#path2-vert",
+        alignOrigin: [0.5, 0.43],
+      },
+    },
+    "start"
+  )
+  .from("#path2-vert", { drawSVG: "0 0" }, "start")
+  .from("#path2drill-vert", { drawSVG: "0 0" }, "start");
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".vertical-section-1",
+      start: "90% bottom",
+      end: "bottom 80%",
+      scrub: true,
+    },
+  })
+  .to(".brown-overlay", {
+    opacity: 1,
+  });
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".vertical-section-1",
+      start: "top 20px",
+      end: "top top",
+      scrub: true,
+    },
+  })
+  .from(".lastdrill-vert", {
+    opacity: 0,
+  });
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".lastSectionUpper",
+      start: "top top",
+      end: "+=50%",
+      scrub: true,
+    },
+  })
+  .to(".brown-overlay", {
+    opacity: 0,
+  });
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".lastSectionUpper",
+      pin: ".lastSectionUpper",
+      start: "top top",
+      end: "+=1000%",
       scrub: true,
     },
     default: {
@@ -673,62 +737,69 @@ gsap
   .from("#path2", { drawSVG: "0 0" }, "start")
   .from("#path2drill", { drawSVG: "0 0" }, "start")
   .to(
-    ".lastdrill",
+    ".lastSectionUpper",
     {
-      motionPath: {
-        path: "#path2",
-        autoRotate: 180,
-        align: "#path2",
-        start: 1,
-        end: 0,
-        alignOrigin: [0.5, 0.5],
-      },
+      x: -1 * (6600 - window.innerWidth),
     },
-    "start2"
-  )
-  .to("#path2drill", { drawSVG: "0% 0%" }, "start2")
+    "-=95%"
+  );
+// .to(
+//   ".lastdrill",
+//   {
+//     motionPath: {
+//       path: "#path2",
+//       autoRotate: 180,
+//       align: "#path2",
+//       start: 1,
+//       end: 0,
+//       alignOrigin: [0.5, 0.5],
+//     },
+//   },
+//   "start2"
+// )
+// .to("#path2drill", { drawSVG: "0% 0%" }, "start2")
 
-  .to(".lastdrill", {
-    opacity: 0,
-  })
-  .to(
-    ".lastinjector",
-    {
-      opacity: 1,
-    },
-    "-=30%"
-  )
-  .to(
-    ".lastinjector",
-    {
-      motionPath: {
-        path: "#path2",
-        autoRotate: 270,
-        align: "#path2",
-        end: 0.975,
-        alignOrigin: [0.5, 0.5],
-      },
-    },
-    "start3"
-  )
-  .from("#path3injector", { drawSVG: "0 0" }, "start3")
+// .to(".lastdrill", {
+//   opacity: 0,
+// })
+// .to(
+//   ".lastinjector",
+//   {
+//     opacity: 1,
+//   },
+//   "-=30%"
+// )
+// .to(
+//   ".lastinjector",
+//   {
+//     motionPath: {
+//       path: "#path2",
+//       autoRotate: 270,
+//       align: "#path2",
+//       end: 0.975,
+//       alignOrigin: [0.5, 0.5],
+//     },
+//   },
+//   "start3"
+// )
+// .from("#path3injector", { drawSVG: "0 0" }, "start3")
 
-  .to(
-    ".lastinjector",
-    {
-      motionPath: {
-        path: "#path2",
-        autoRotate: 90,
-        align: "#path2",
-        start: 0.975,
-        end: 0,
-        alignOrigin: [0.5, 0.5],
-      },
-    },
-    "inject"
-  )
-  .from("#path3", { drawSVG: "100% 100%" }, "inject")
-  .to("#path3injector", { drawSVG: "0 0" }, "inject");
+// .to(
+//   ".lastinjector",
+//   {
+//     motionPath: {
+//       path: "#path2",
+//       autoRotate: 90,
+//       align: "#path2",
+//       start: 0.975,
+//       end: 0,
+//       alignOrigin: [0.5, 0.5],
+//     },
+//   },
+//   "inject"
+// )
+// .from("#path3", { drawSVG: "100% 100%" }, "inject")
+// .to("#path3injector", { drawSVG: "0 0" }, "inject");
 
 // .to(".lastdrill", {
 //   y: (window.innerHeight * 20) / 100,
